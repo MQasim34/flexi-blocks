@@ -1,5 +1,6 @@
 {
   "name": "flexi-blocks",
+  "homepage": "https://mqasim34.github.io/flexiBlocks/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,6 +9,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "build": "vite build",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
