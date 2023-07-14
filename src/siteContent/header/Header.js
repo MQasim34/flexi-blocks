@@ -4,7 +4,7 @@ export const PrimaryLinks = [
     {
         id: 'home',
         name: 'home',
-        pageURL: '/'
+        pageURL: '/flexiBlocks/'
     },
     {
         id: 'about',
