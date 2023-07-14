@@ -17,7 +17,7 @@ function App() {
       <Primaryhdr />
       <Routes>
         <Route path='/flexiBlocks/' element={ <HomeMain /> } />
-        <Route path='/about' element={ <AboutMain />}/>
+        <Route path='/flexiBlocks/about' element={ <AboutMain />}/>
       </Routes>
     </BrowserRouter>
   )

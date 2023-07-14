@@ -9,17 +9,17 @@ export const PrimaryLinks = [
     {
         id: 'about',
         name: 'about',
-        pageURL: '/about'
+        pageURL: '/flexiBlocks/about'
     },
     {
         id: 'contact',
         name: 'contact',
-        pageURL: '/contact'
+        pageURL: '/flexiBlocks/contact'
     },
     {
         id: 'account',
         name: 'account',
-        pageURL: '/contact'
+        pageURL: '/flexiBlocks/contact'
     }
 ]
 
