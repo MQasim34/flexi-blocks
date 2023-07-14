@@ -67,7 +67,7 @@ const Primaryhdr = () => {
       <div className="main">
         <div className="inner">
           <div className="headerLeft">
-            <Link to="/" className="logoLink">
+            <Link to="/flexiBlocks/" className="logoLink">
               <img src={logo} alt="FlexiBlocks" />
             </Link>
           </div>
