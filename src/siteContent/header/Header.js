@@ -4,22 +4,22 @@ export const PrimaryLinks = [
     {
         id: 'home',
         name: 'home',
-        pageURL: '/flexiBlocks/'
+        pageURL: '/flexi-blocks/'
     },
     {
         id: 'about',
         name: 'about',
-        pageURL: '/flexiBlocks/about'
+        pageURL: '/flexi-blocks/about'
     },
     {
         id: 'contact',
         name: 'contact',
-        pageURL: '/flexiBlocks/contact'
+        pageURL: '/flexi-blocks/contact'
     },
     {
         id: 'account',
         name: 'account',
-        pageURL: '/flexiBlocks/contact'
+        pageURL: '/flexi-blocks/contact'
     }
 ]
 
