@@ -1,0 +1,146 @@
+.primaryHeader {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+
+  .main {
+    .inner {
+      // background-color: #ccc;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+
+      // headerLeft
+      .headerLeft {
+        .logoLink {
+          width: 200px;
+          display: block;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      // .headerRight
+      .headerRight {
+        display: flex;
+        ul {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
+          margin: 0;
+          list-style: none;
+
+          li {
+            display: block;
+            margin-left: 24px;
+
+            .navLinks {
+              text-decoration: none;
+              text-transform: capitalize;
+              color: #000;
+              font-weight: 500;
+              font-family: "Poppins", sans-serif;
+              font-size: 17px;
+            }
+            .navLinks.active {
+              color: #a855f7;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+
+      .navBarIcon {
+        span {
+          cursor: pointer;
+          i {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+
+  .mobileNav {
+    position: fixed;
+    width: 0;
+    height: 100%;
+    background-color: #a855f7;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+
+    ul {
+      position: relative;
+      left: -100px;
+      opacity: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      gap: 20px;
+      height: 100%;
+
+      li {
+        display: block;
+        .navLinks {
+          text-decoration: none;
+          text-transform: capitalize;
+          color: #000;
+          font-weight: 500;
+          font-family: "Poppins", sans-serif;
+          font-size: 20px;
+        }
+        .navLinks.active {
+          color: #fff;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  .mobileNav.active {
+    left: 0;
+    max-width: 320px;
+    width: 100%;
+    transition: 0.8s ease;
+    opacity: 1;
+    visibility: visible;
+
+    ul {
+      left: 0;
+      opacity: 1;
+      transition: 0.4s;
+    }
+  }
+}
+
+// body overflow hidden
+.overflowActive {
+  overflow: hidden;
+}
+
+// media query 575px
+
+@media only screen and (max-width: 575px) {
+  .primaryHeader {
+    .main {
+      .inner {
+        padding: 12px 0;
+
+        .headerLeft {
+          .logoLink {
+            width: 140px;
+          }
+        }
+      }
+    }
+  }
+}
