@@ -1,6 +1,5 @@
 import React from "react";
 import "../HomeStyle.scss";
-import { motion } from "framer-motion";
 import CountUp from "./CountUp";
 import { section2 } from "../../../siteContent/home/homeCon";
 
@@ -23,7 +22,7 @@ const HomeSec2 = () => {
           <div className="inenerContent">
             <div className="contentMain">
               {section2.map((sec) => (
-                <motion.div className="cn_outer" key={sec.title}>
+                <div className="cn_outer" key={sec.title}>
                   <div className="sec2Img">
                     <img src={sec.Icon} alt="" />
                   </div>
@@ -31,7 +30,7 @@ const HomeSec2 = () => {
                     <h1>{sec.title}</h1>
                     <p>{sec.details}</p>
                   </div>
-                </motion.div>
+                </div>
               ))}
             </div>
           </div>
