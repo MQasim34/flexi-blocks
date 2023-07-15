@@ -77,14 +77,129 @@
 
 // HomeSec2 start
 
-.HomeSec2{
-    background-color: #f6f8fd;
-    padding: 90px 0;
-    border-radius: 30px;
+.HomeSec2 {
+  background-color: #f6f8fd;
+  border-radius: 30px;
+  position: relative;
+  padding: 0 13px 60px 13px;
+
+  .counterUp {
+    max-width: 1100px;
+    margin: auto;
+    width: 100%;
+    padding: 0 13px;
+    background-color: #fff;
+    box-shadow: 0 0 20px #4e4e4e1c;
+    top: -90px;
+    position: relative;
+    border-radius: 17px;
+
+    .outer {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      padding: 60px 10px;
+      text-align: center;
+      color: #fff;
+
+      .inner {
+        width: 25%;
+        h1.numbers {
+          font-size: 48px;
+          font-weight: 700;
+          color: #293748;
+          font-family: "Poppins", sans-serif;
+        }
+
+        h3.title {
+          font-size: 20px;
+          font-weight: 400;
+          color: #a855f7;
+          font-family: "Poppins", sans-serif;
+        }
+      }
+    }
+  }
+
+  .main {
+    padding: 0;
+    .content {
+      h1 {
+        font-size: 36px;
+        color: #293748;
+        font-weight: 700;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+
+        span {
+          color: #6366f1;
+        }
+      }
+      p {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 23px;
+        font-weight: 400;
+        color: #2d3748;
+        line-height: 1.7;
+      }
+
+      .inenerContent {
+        .contentMain {
+          margin-top: 60px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+
+          :first-child .sec2Img {
+            background-color: yellow;
+          }
+          :nth-child(2) .sec2Img {
+            background-color: blue;
+          }
+          :nth-child(3) .sec2Img {
+            background-color: pink;
+          }
+          :last-child .sec2Img {
+            background-color: green;
+          }
+          .cn_outer {
+            width: 23%;
+            border-radius: 15px;
+            padding: 40px 20px 20px 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.11);
+            background-color: #fff;
+            .sec2Img {
+              padding: 20px;
+              border-radius: 50px;
+              display: inline-flex;
+              justify-content: center;
+              align-items: center;
+            }
+
+            .sz2 {
+              margin-top: 25px;
+              h1 {
+                font-size: 22px;
+                font-family: "Poppins", sans-serif;
+                color: #000;
+              }
+              p {
+                margin-top: 10px;
+                line-height: 1.4;
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // HomeSec2 end
-
 
 // media query at 991px
 
@@ -131,6 +246,7 @@
       }
     }
   }
+  // // // // // // //
 }
 
 //media query at 767px
@@ -166,9 +282,36 @@
       }
     }
   }
+
+  .HomeSec2 {
+    .counterUp {
+      .outer {
+        gap: 30px 0;
+        .inner {
+          width: 50%;
+        }
+      }
+    }
+
+    .main {
+      .content {
+        .inenerContent {
+          .contentMain {
+            justify-content: center;
+            gap: 30px;
+            .cn_outer {
+              width: 45%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //  // // // // // //
 }
 
-//media query at 767px
+//media query at 575px
 
 @media only screen and (max-width: 575px) {
   .homesec1 {
@@ -189,7 +332,7 @@
           }
         }
         .right {
-            left: 0;
+          left: 0;
           .hero {
             max-width: 360px;
             margin: auto;
@@ -206,9 +349,30 @@
       }
     }
   }
+
+  // section 2
+
+  .HomeSec2 {
+    .main {
+      .content {
+        .inenerContent {
+          .contentMain {
+            justify-content: center;
+            gap: 30px;
+            flex-direction: column;
+            .cn_outer {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // // // // //
 }
 
-//media query at 767px
+//media query at 428px
 
 @media only screen and (max-width: 428px) {
   .homesec1 {
@@ -225,8 +389,8 @@
             margin: 10px 0 0 0;
           }
           p {
-              font-size: 13px;
-              margin-top: 10px;
+            font-size: 13px;
+            margin-top: 10px;
           }
         }
         .right {
@@ -240,4 +404,18 @@
       }
     }
   }
+
+  // section2
+
+  .HomeSec2 {
+    .counterUp {
+      .outer {
+        .inner {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  // // // // // // // //
 }
