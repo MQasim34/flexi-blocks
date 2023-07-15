@@ -1,7 +1,7 @@
 import React from "react";
 import "../HomeStyle.scss";
 import CountUp from "./CountUp";
-import { section2 } from "../../../siteContent/home/homeCon";
+import { section2 } from "../../../siteContent/home/HomeCon";
 
 const HomeSec2 = () => {
   return (
