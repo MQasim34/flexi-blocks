@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "../HomeStyle.scss";
-import { forCounter } from "../../../siteContent/home/homeCon";
+import { forCounter } from "../../../siteContent/home/HomeCon";
 import { motion } from "framer-motion";
 
 
