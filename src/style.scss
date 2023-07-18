@@ -1,23 +1,29 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 .main {
-    max-width: 1240px;
-    margin: auto;
-    padding: 0 13px;
-    width: 100%;
-    padding: 0 12px;
-    // background-color: red;
+  max-width: 1240px;
+  margin: auto;
+  padding: 0 13px;
+  width: 100%;
+  padding: 0 12px;
+  // background-color: red;
 }
 
-.verlayoutInner{
-    opacity: 0;
-    visibility: hidden;
-    transition: all .3s ease-in-out;
-  }
-  .verlayoutInner.active{
-    opacity: 1;
-    visibility: visible;
-  }
+.verlayoutInner {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.verlayoutInner.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.forAppDispalying{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

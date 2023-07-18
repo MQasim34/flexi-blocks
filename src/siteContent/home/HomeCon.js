@@ -60,3 +60,35 @@ export const section2 = [
         details: 'Understand First. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.'
     }
 ]
+
+// section 3
+
+
+export const section3left = [
+    {
+        title: 'Listening and Speaking',
+        details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
+    },
+    {
+        title: 'Fun, Bite-Sized Lessons',
+        details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
+    },
+    {
+        title: 'Unlimited Lessons',
+        details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
+    },
+]
+export const section3right = [
+    {
+        title: 'Daily Goals and Ranking',
+        details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
+    },
+    {
+        title: 'Native Teachers',
+        details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
+    },
+    {
+        title: 'Useful Everyday Phrases',
+        details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
+    },
+]

@@ -1,14 +1,12 @@
 import React, { useEffect } from "react";
 import "../HomeStyle.scss";
-import { forCounter } from "../../../siteContent/home/homeCon";
-import { motion } from "framer-motion";
+import { forCounter } from "../../../siteContent/home/HomeCon";
 
 
 
 const CountUp = () => {
   return (
-    <motion.div  
-    className="counterUp">
+    <div className="counterUp">
       <div className="outer">
         {forCounter.map((forcounter) => (
           <div className="inner" key={forcounter.id}>
@@ -17,7 +15,7 @@ const CountUp = () => {
           </div>
         ))}
       </div>
-    </motion.div>
+    </div>
   );
 };
 
