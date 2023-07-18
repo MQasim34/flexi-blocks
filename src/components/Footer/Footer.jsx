@@ -17,13 +17,13 @@ const Footer = () => {
             <h1>Quick Links</h1>
             <ul>
                 <li>
-                    <Link to="" className="links">Home</Link>
+                    <Link to="/flexi-blocks/" className="links">Home</Link>
                 </li>
                 <li>
-                    <Link to="" className="links">blog</Link>
+                    <Link to="/flexi-blocks/" className="links">blog</Link>
                 </li>
                 <li>
-                    <Link to="" className="links">Contact</Link>
+                    <Link to="/flexi-blocks/" className="links">Contact</Link>
                 </li>
             </ul>
           </div>
@@ -31,13 +31,13 @@ const Footer = () => {
             <h1>Legal Stuff</h1>
             <ul>
                 <li>
-                    <Link to="" className="links">privacy policy</Link>
+                    <Link to="/flexi-blocks/" className="links">privacy policy</Link>
                 </li>
                 <li>
-                    <Link to="" className="links">cookie policy</Link>
+                    <Link to="/flexi-blocks/" className="links">cookie policy</Link>
                 </li>
                 <li>
-                    <Link to="" className="links">terms of uses</Link>
+                    <Link to="/flexi-blocks/" className="links">terms of uses</Link>
                 </li>
             </ul>
           </div>
@@ -45,13 +45,13 @@ const Footer = () => {
             <h1>social media</h1>
             <ul>
                 <li>
-                    <Link to="" className="links"><i class="bi bi-github"></i> github</Link>
+                    <Link to="/flexi-blocks/" className="links"><i class="bi bi-github"></i> github</Link>
                 </li>
                 <li>
-                    <Link to="" className="links"> <i class="bi bi-twitter"></i> twitter</Link>
+                    <Link to="/flexi-blocks/" className="links"> <i class="bi bi-twitter"></i> twitter</Link>
                 </li>
                 <li>
-                    <Link to="" className="links"><i class="bi bi-instagram"></i> instagram</Link>
+                    <Link to="/flexi-blocks/" className="links"><i class="bi bi-instagram"></i> instagram</Link>
                 </li>
             </ul>
           </div>
