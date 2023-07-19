@@ -48,7 +48,7 @@ const CountUp = () => {
                 animate={
                   isVisible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }
                 }
-                transition={{ duration: .7, delay: .4 }}
+                transition={{ duration: .7 }}
               >
                 {forcounter.end}
               </motion.h1>
@@ -59,7 +59,7 @@ const CountUp = () => {
                 animate={
                   isVisible ? { opacity: 1  } : { opacity: 0 }
                 }
-                transition={{ duration: .5, delay: .5 }}
+                transition={{ duration: .5 }}
               >{forcounter.title}</motion.h3>
             </div>
           ))}
