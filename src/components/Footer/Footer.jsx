@@ -45,7 +45,7 @@ const Footer = () => {
             <h1>social media</h1>
             <ul>
                 <li>
-                    <Link to="/flexi-blocks/" className="links"><i class="bi bi-github"></i> github</Link>
+                    <Link to="https://github.com/MQasim34/flexi-blocks" target="_blank" className="links"><i class="bi bi-github"></i> github</Link>
                 </li>
                 <li>
                     <Link to="/flexi-blocks/" className="links"> <i class="bi bi-twitter"></i> twitter</Link>
