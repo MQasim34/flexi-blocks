@@ -20,7 +20,7 @@ const HomeSec7 = () => {
         <div className="main">
           <div className="inner">
             {section7.map((sec7) => (
-              <div className="cardInner">
+              <div className="cardInner" key={sec7.position}>
                 <img src={sec7.mainImg} alt="" />
                 <div className="lowerCon">
                   <h4>{sec7.position}</h4>
