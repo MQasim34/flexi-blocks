@@ -19,7 +19,7 @@ const HomeSec3 = () => {
         <div className="lowerSec">
           <div className="left">
             {section3left.map( (left) => (
-              <div>
+              <div key={left.title}>
                 <h1>{left.title}</h1>
                 <p>{left.details}</p>
               </div>
@@ -30,7 +30,7 @@ const HomeSec3 = () => {
           </div>
           <div className="right">
             {section3right.map( (right) => (
-              <div>
+              <div key={right.title}>
                 <h1>{right.title}</h1>
                 <p>{right.details}</p>
               </div>
