@@ -3,6 +3,20 @@ import "../HomeStyle.scss";
 import { forCounter } from "../../../siteContent/home/HomeCon";
 import { motion } from "framer-motion";
 
+
+const numberVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      // delay: 2,
+      duration: 1,
+    },
+  },
+}
+
 const CountUp = () => {
   const elementRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -38,17 +52,17 @@ const CountUp = () => {
   return (
     <div>
       <div className="counterUp">
-        <div className="outer">
+        <div className="outer" ref={elementRef}>
           {forCounter.map((forcounter) => (
             <div className="inner" key={forcounter.id}>
               <motion.h1
                 className="numbers"
-                ref={elementRef}
-                initial={{ opacity: 0, scale: 0 }}
+                variants={numberVariants}
+                initial='hidden'
                 animate={
-                  isVisible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }
+                  isVisible ? 'visible' : 'hidden'
                 }
-                transition={{ duration: .7 }}
+                // transition={{ duration: .7 }}
               >
                 {forcounter.end}
               </motion.h1>
