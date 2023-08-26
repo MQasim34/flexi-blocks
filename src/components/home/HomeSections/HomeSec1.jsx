@@ -54,10 +54,13 @@ const HomeSec1 = () => {
             animate="final"
           >
             <span>Start Learning Today</span>
-            <h1>Introducing <br /> Learning App</h1>
+            <h1>
+              Introducing <br /> Learning App
+            </h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit, sed do
-              eiusmod tempor <br /> incididunt ut labore et dolore magna aliqua.
+              Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit,
+              sed do eiusmod tempor <br /> incididunt ut labore et dolore magna
+              aliqua.
             </p>
           </motion.div>
           <motion.div

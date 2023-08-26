@@ -3,6 +3,7 @@ import "./header.scss";
 import { PrimaryLinks } from "../../siteContent/header/Header";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
+// import logo1 from "../../assets/logo1.svg";
 import Overlayout from "../overlay/Overlayout";
 
 const Primaryhdr = () => {
@@ -58,9 +59,9 @@ const Primaryhdr = () => {
     setIsmenuBar(!ismenuBar);
   };
 
-  useEffect( () => {
-      document.body.classList.toggle('overflowActive',ismenuBar )
-    },[ismenuBar])
+  useEffect(() => {
+    document.body.classList.toggle("overflowActive", ismenuBar);
+  }, [ismenuBar]);
 
   return (
     <div className="primaryHeader" id="primaryHeader">
@@ -108,7 +109,10 @@ const Primaryhdr = () => {
       </div>
 
       {isMobile ? (
-        <div className={ismenuBar ? 'mobileNav active' : 'mobileNav'} onClick={handleMenuIcon}>
+        <div
+          className={ismenuBar ? "mobileNav active" : "mobileNav"}
+          onClick={handleMenuIcon}
+        >
           <ul>
             {PrimaryLinks.map((primary) => (
               <li key={primary.id}>
@@ -133,14 +137,16 @@ const Primaryhdr = () => {
       <div>
         {isMobile ? (
           <div
-          className={ismenuBar ? 'verlayoutInner active' : 'verlayoutInner'} onClick={handleMenuIcon}>
+            className={ismenuBar ? "verlayoutInner active" : "verlayoutInner"}
+            onClick={handleMenuIcon}
+          >
             <Overlayout />
           </div>
-          ) : ('')
-        }
+        ) : (
+          ""
+        )}
       </div>
     </div>
-    
   );
 };
 

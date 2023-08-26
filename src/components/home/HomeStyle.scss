@@ -1,7 +1,6 @@
 .homesec1 {
   overflow-x: hidden;
   padding-bottom: 150px;
-
   .main {
     .inner {
       display: flex;
@@ -75,7 +74,9 @@
   }
 }
 
-// HomeSec2
+/** 
+  *! HomeSec2
+*/
 .HomeSec2 {
   background-color: #f6f8fd;
   border-radius: 30px;
@@ -644,14 +645,14 @@
               color: #5d66f0;
               text-transform: capitalize;
             }
-            h1{
+            h1 {
               font-size: 21px;
               font-family: "Poppins", sans-serif;
               font-weight: 700;
               color: #293748;
               margin-top: 20px;
             }
-            p{
+            p {
               font-size: 15px;
               line-height: 1.7;
               font-weight: 400;
@@ -659,12 +660,12 @@
               font-family: "Poppins", sans-serif;
             }
 
-            .lowerInner{
+            .lowerInner {
               display: flex;
               align-items: flex-start;
               justify-content: flex-start;
               gap: 20px;
-              .left{
+              .left {
                 width: 45px;
                 height: 45px;
                 object-fit: cover;
@@ -672,21 +673,21 @@
                 background-color: #505050;
                 overflow: hidden;
 
-                img{
+                img {
                   width: 100%;
                   height: 100%;
                   object-fit: contain;
                 }
               }
-              .right{
-                h2{
+              .right {
+                h2 {
                   font-size: 16px;
                   font-family: "Poppins", sans-serif;
                   font-weight: 600;
                   color: #505050;
                   margin: 0;
                 }
-                span{
+                span {
                   font-size: 14px;
                   font-family: "Poppins", sans-serif;
                   font-weight: 400;
@@ -981,99 +982,100 @@
   }
 
   // sectio7
-.sectio7 {
-  padding: 60px 0;
+  .sectio7 {
+    padding: 60px 0;
 
-  .section-title {
-    h1 {
-      font-size: 30px;
+    .section-title {
+      h1 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 17px;
+      }
     }
-    p {
-      font-size: 17px;
-    }
-  }
 
-  .blogContnet {
-    margin-top: 40px;
+    .blogContnet {
+      margin-top: 40px;
 
-    .main {
-      .inner {
-        flex-wrap: wrap;
+      .main {
+        .inner {
+          flex-wrap: wrap;
 
-        .cardInner {
-          width: 80%;
-          margin: auto;
+          .cardInner {
+            width: 80%;
+            margin: auto;
 
-          img {
-            width: 100%;
-            height: 270px;
-            object-fit: cover;
-            border-radius: 10px;
-          }
-
-          .lowerCon {
-            margin-top: 10px;
-            padding: 20px;
-
-            h4 {
-              display: inline;
-              padding: 4px 10px;
+            img {
+              width: 100%;
+              height: 270px;
+              object-fit: cover;
               border-radius: 10px;
-              font-size: 12px;
-              font-family: "Poppins", sans-serif;
-              font-weight: 500;
-              text-align: left;
-              background-color: #5d67f031;
-              color: #5d66f0;
-              text-transform: capitalize;
-            }
-            h1{
-              font-size: 21px;
-              font-family: "Poppins", sans-serif;
-              font-weight: 700;
-              color: #293748;
-              margin-top: 20px;
-            }
-            p{
-              font-size: 15px;
-              line-height: 1.7;
-              font-weight: 400;
-              color: #293748;
-              font-family: "Poppins", sans-serif;
             }
 
-            .lowerInner{
-              display: flex;
-              align-items: flex-start;
-              justify-content: flex-start;
-              gap: 20px;
-              .left{
-                width: 45px;
-                height: 45px;
-                object-fit: cover;
-                border-radius: 60px;
-                background-color: #505050;
-                overflow: hidden;
+            .lowerCon {
+              margin-top: 10px;
+              padding: 20px;
 
-                img{
-                  width: 100%;
-                  height: 100%;
-                  object-fit: contain;
-                }
+              h4 {
+                display: inline;
+                padding: 4px 10px;
+                border-radius: 10px;
+                font-size: 12px;
+                font-family: "Poppins", sans-serif;
+                font-weight: 500;
+                text-align: left;
+                background-color: #5d67f031;
+                color: #5d66f0;
+                text-transform: capitalize;
               }
-              .right{
-                h2{
-                  font-size: 16px;
-                  font-family: "Poppins", sans-serif;
-                  font-weight: 600;
-                  color: #505050;
-                  margin: 0;
+              h1 {
+                font-size: 21px;
+                font-family: "Poppins", sans-serif;
+                font-weight: 700;
+                color: #293748;
+                margin-top: 20px;
+              }
+              p {
+                font-size: 15px;
+                line-height: 1.7;
+                font-weight: 400;
+                color: #293748;
+                font-family: "Poppins", sans-serif;
+              }
+
+              .lowerInner {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 20px;
+                .left {
+                  width: 45px;
+                  height: 45px;
+                  object-fit: cover;
+                  border-radius: 60px;
+                  background-color: #505050;
+                  overflow: hidden;
+
+                  img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                  }
                 }
-                span{
-                  font-size: 14px;
-                  font-family: "Poppins", sans-serif;
-                  font-weight: 400;
-                  color: #35353583;
+                .right {
+                  h2 {
+                    font-size: 16px;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 600;
+                    color: #505050;
+                    margin: 0;
+                  }
+                  span {
+                    font-size: 14px;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 400;
+                    color: #35353583;
+                  }
                 }
               }
             }
@@ -1082,7 +1084,6 @@
       }
     }
   }
-}
 
   //  // // // // // //
 }
@@ -1251,26 +1252,26 @@
     }
   }
 
-    // sectio7
-.sectio7 {
-  padding: 60px 0;
+  // sectio7
+  .sectio7 {
+    padding: 60px 0;
 
-  .blogContnet {
-    margin-top: 40px;
+    .blogContnet {
+      margin-top: 40px;
 
-    .main {
-      .inner {
-        padding: 0;
-        flex-wrap: wrap;
+      .main {
+        .inner {
+          padding: 0;
+          flex-wrap: wrap;
 
-        .cardInner {
-          width: 100%;
-          margin: auto;
+          .cardInner {
+            width: 100%;
+            margin: auto;
+          }
         }
       }
     }
   }
-}
 
   // // // // //
 }
@@ -1520,73 +1521,73 @@
     }
   }
 
-    // sectio7
-.sectio7 {
-  padding: 45px 0;
+  // sectio7
+  .sectio7 {
+    padding: 45px 0;
 
-  .section-title {
-    h1 {
-      font-size: 25px;
+    .section-title {
+      h1 {
+        font-size: 25px;
+      }
+      p {
+        font-size: 14px;
+      }
     }
-    p {
-      font-size: 14px;
-    }
-  }
 
-  .blogContnet {
-    margin-top: 20px;
+    .blogContnet {
+      margin-top: 20px;
 
-    .main {
-      .inner {
-        gap: 20px;
-        flex-wrap: wrap;
+      .main {
+        .inner {
+          gap: 20px;
+          flex-wrap: wrap;
 
-        .cardInner {
-
-          img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 10px;
-          }
-
-          .lowerCon {
-            margin-top: 0;
-            padding: 10px ;
-            h1{
-              font-size: 16px;
-              margin-top: 10px;
-            }
-            p{
-              font-size: 13px;
-              line-height: normal;
+          .cardInner {
+            img {
+              width: 100%;
+              height: 180px;
+              object-fit: cover;
+              border-radius: 10px;
             }
 
-            .lowerInner{
-              display: flex;
-              align-items: flex-start;
-              justify-content: flex-start;
-              gap: 20px;
-              .left{
-                width: 45px;
-                height: 45px;
-                object-fit: cover;
-                border-radius: 60px;
-                background-color: #505050;
-                overflow: hidden;
-
-                img{
-                  width: 100%;
-                  height: 100%;
-                  object-fit: contain;
-                }
+            .lowerCon {
+              margin-top: 0;
+              padding: 10px;
+              h1 {
+                font-size: 16px;
+                margin-top: 10px;
               }
-              .right{
-                h2{
-                  font-size: 13px;
+              p {
+                font-size: 13px;
+                line-height: normal;
+              }
+
+              .lowerInner {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 20px;
+                .left {
+                  width: 45px;
+                  height: 45px;
+                  object-fit: cover;
+                  border-radius: 60px;
+                  background-color: #505050;
+                  overflow: hidden;
+
+                  img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                  }
                 }
-                span{
-                  font-size: 13px;
+                .right {
+                  h2 {
+                    font-size: 13px;
+                  }
+                  span {
+                    font-size: 13px;
+                  }
                 }
               }
             }
@@ -1595,7 +1596,6 @@
       }
     }
   }
-}
 
   // // // // // // // //
 }
