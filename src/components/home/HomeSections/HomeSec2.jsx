@@ -33,6 +33,30 @@ const homeSec21Variants = {
     },
   }),
 };
+const svgVariants = {
+  initial: {
+    opacity: "0 !important",
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      duration: 2,
+      ease: "easeInOut",
+    },
+  },
+};
+const pathVariants = {
+  initial: {
+    pathLength: 0,
+  },
+  animate: {
+    pathLength: 1,
+    transition: {
+      duration: 2,
+      ease: "easeInOut",
+    },
+  },
+};
 
 const HomeSec2 = () => {
   return (
@@ -71,7 +95,31 @@ const HomeSec2 = () => {
                   viewport={{ once: true }}
                 >
                   <div className="sec2Img">
-                    <img src={sec.Icon} alt="" />
+                    <motion.svg
+                      width="35"
+                      height="35"
+                      class="bi bi-globe2"
+                      viewBox="0 0 16 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      style={{ gap: "10px" }}
+                    >
+                      <motion.path
+                        initial={{ pathLength: 0 }}
+                        animate={{ pathLength: 0.7 }}
+                        transition={{
+                          duration: 2,
+                          ease: "easeInOut",
+                          repeat: Infinity,
+                          repeatType: "loop",
+                          repeatDelay: 1,
+                        }}
+                        fill={"transparent"}
+                        stroke={sec.color}
+                        strokeWidth={0.7}
+                        strokeDasharray="0 4"
+                        d={sec.path}
+                      />
+                    </motion.svg>
                   </div>
                   <div className="sz2">
                     <h1>{sec.title}</h1>
