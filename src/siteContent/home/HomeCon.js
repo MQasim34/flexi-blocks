@@ -15,6 +15,7 @@ import {
     blog1,
     blog2,
     blog3,
+    start
 } from "../../assets/Images"
 
 
@@ -154,30 +155,35 @@ export const section6 = [
         name: 'John Doe',
         position: 'CEO of CoolCompany',
         details: 'Sed commodo, est quis maximus fermentum, massa ipsum euismod neque, in varius risus tellus quis lacus. Sed ac bibendum odio.',
+        icons: start
     },
     {
         image: hslide2,
         name: 'Jane Smith',
         position: 'Developer at AwesomeCo',
         details: 'Sed commodo, est quis maximus fermentum, massa ipsum euismod neque, in varius risus tellus quis lacus. Sed ac bibendum odio.',
+        icons: start
     },
     {
         image: hslide3,
         name: 'Sarah Doe',
         position: 'Marketing Manager',
         details: 'Sed commodo, est quis maximus fermentum, massa ipsum euismod neque, in varius risus tellus quis lacus. Sed ac bibendum odio.',
+        icons: start
     },
     {
         image: hslide4,
         name: 'Steve Grant',
         position: 'Freelancer Developer',
         details: 'Sed commodo, est quis maximus fermentum, massa ipsum euismod neque, in varius risus tellus quis lacus. Sed ac bibendum odio.',
+        icons: start
     },
     {
         image: hslide5,
         name: 'Florrie Jacobs',
         position: 'Senior Fashion Designer',
         details: 'Sed commodo, est quis maximus fermentum, massa ipsum euismod neque, in varius risus tellus quis lacus. Sed ac bibendum odio.',
+        icons: start
     },
 ]
 

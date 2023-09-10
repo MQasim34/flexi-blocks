@@ -1,5 +1,21 @@
 import React, { useState } from "react";
 import { section7 } from "../../../siteContent/home/HomeCon";
+import { motion } from "framer-motion";
+
+const homeSec3Variants = {
+  initial: {
+    opacity: 0,
+    y: 50,
+  },
+  animate: (index) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.2 * index,
+      duration: 1,
+    },
+  }),
+};
 
 const HomeSec7 = () => {
   return (
@@ -19,8 +35,15 @@ const HomeSec7 = () => {
       <div className="blogContnet">
         <div className="main">
           <div className="inner">
-            {section7.map((sec7) => (
-              <div className="cardInner" key={sec7.position}>
+            {section7.map((sec7, index) => (
+              <motion.div
+                key={sec7.position}
+                variants={homeSec3Variants}
+                initial="initial"
+                whileInView="animate"
+                custom={index}
+                className="cardInner"
+              >
                 <img src={sec7.mainImg} alt="" />
                 <div className="lowerCon">
                   <h4>{sec7.position}</h4>
@@ -37,7 +60,7 @@ const HomeSec7 = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

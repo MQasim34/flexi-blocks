@@ -8,6 +8,12 @@ const HomeSec6 = () => {
   const goToSlide = (index) => {
     setCurrentSlide(index);
   };
+
+  const Forstars = section6.map((e, index) => {
+    <div key={index}>
+      <img src={e.icons} alt="" />
+    </div>;
+  });
   return (
     <div className="HomeSec6">
       <div className="main">
@@ -22,22 +28,44 @@ const HomeSec6 = () => {
                       index === currentSlide ? "leftMain active" : "leftMain"
                     }
                   >
-                    <motion.div className={`sldierImg ${currentSlide === index ? 'open' : ''}`}
-                    initial={{ scale: .8, rotate: '-30deg', opacity: 0 }}
-                    animate={{ scale:  currentSlide === index ?  1 : .8, opacity:  currentSlide === index ?  1 : 0, rotate:  currentSlide === index ? '0deg' :'-30deg'  }}
-                    exit={{ scale: .8 }}
-                    transition={{ duration: .4 }}
-                    onClick={() => goToSlide(index)}
+                    <motion.div
+                      className={`sldierImg ${
+                        currentSlide === index ? "open" : null
+                      }`}
+                      initial={{ scale: 0.8, rotate: "-30deg", opacity: 0 }}
+                      animate={{
+                        scale: currentSlide === index ? 1 : 0.8,
+                        opacity: currentSlide === index ? 1 : 0,
+                        rotate: currentSlide === index ? "0deg" : "-30deg",
+                      }}
+                      exit={{ scale: 0.8 }}
+                      transition={{ duration: 0.4 }}
+                      onClick={() => goToSlide(index)}
                     >
                       <img src={sec6.image} alt="" />
                     </motion.div>
-                    <motion.div className={`sliderCont ${currentSlide === index ? 'open': ''}` }
-                    initial={{y: 40, opacity: 0,}}
-                    animate={{y: currentSlide === index ? 0 : 40, opacity: currentSlide === index ? 1: 0, }}
-                    transition={{duration: .5}}>
+                    <motion.div
+                      className={`sliderCont ${
+                        currentSlide === index ? "open" : ""
+                      }`}
+                      initial={{ y: 40, opacity: 0 }}
+                      animate={{
+                        y: currentSlide === index ? 0 : 40,
+                        opacity: currentSlide === index ? 1 : 0,
+                      }}
+                      transition={{ duration: 0.5 }}
+                    >
                       <h2>{sec6.name}</h2>
                       <h1>{sec6.position}</h1>
                       <p>{sec6.details}</p>
+
+                      <div className="starts">
+                        <img src={sec6.icons} alt="" />
+                        <img src={sec6.icons} alt="" />
+                        <img src={sec6.icons} alt="" />
+                        <img src={sec6.icons} alt="" />
+                        <img src={sec6.icons} alt="" />
+                      </div>
                     </motion.div>
                   </div>
                 ))}
@@ -46,7 +74,9 @@ const HomeSec6 = () => {
                 {section6.map((_, index) => (
                   <span
                     key={index}
-                    className={`dot ${currentSlide === index ? "dot active" : "dot" }`}
+                    className={`dot ${
+                      currentSlide === index ? "dot active" : "dot"
+                    }`}
                     onClick={() => goToSlide(index)}
                   />
                 ))}

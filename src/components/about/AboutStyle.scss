@@ -1,3 +1,261 @@
-.aboutSec1{
-    font-size: 20px;
+.about {
+  margin-top: 20px;
+  .main {
+    .inner {
+      padding-top: 120px;
+      text-align: center;
+      .about_banner {
+        margin-top: 120px;
+
+        h3 {
+          color: #6366f1;
+          font-weight: 700;
+          font-size: 26px;
+          font-family: "Poppins", sans-serif;
+          margin: 0;
+        }
+        h1 {
+          margin: 10px 0 0 0;
+          color: #0c0b1fce;
+          font-weight: 700;
+          font-size: 46px;
+          font-family: "Poppins", sans-serif;
+        }
+        p {
+          margin: 10px 0 0 0;
+          color: #718096;
+          font-weight: 500;
+          font-size: 20px;
+          font-family: "Poppins", sans-serif;
+        }
+
+        .bnnaer_iamge {
+          margin-top: 45px;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .bannerCont {
+          .right-title {
+            margin-bottom: 0;
+            font-size: 15px;
+            line-height: 1.5;
+            padding-right: 156px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// aboutSec1
+
+.aboutSec1 {
+  font-family: "Poppins", sans-serif;
+  margin-top: 90px;
+  .main {
+    .about1 {
+      padding-top: 90px;
+      text-align: center;
+      h1 {
+        margin: 10px 0 0 0;
+        color: #0c0b1fce;
+        font-weight: 700;
+        font-size: 46px;
+        font-family: "Poppins", sans-serif;
+      }
+      p {
+        margin: 30px 0 0 0;
+        color: #718096;
+        font-weight: 500;
+        font-size: 20px;
+        font-family: "Poppins", sans-serif;
+        line-height: 2;
+      }
+    }
+
+    .aboutlower {
+      .almain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 28px;
+        padding: 0 30px;
+        margin-top: 60px;
+
+        .inner {
+          padding: 0;
+          width: 265px;
+          background-color: #fff;
+          box-shadow: 0 0 5px 2px #00000015;
+          border-radius: 10px;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+        }
+        .inner.innermap {
+          padding: 25px 15px;
+          .mapImag {
+            display: inline-block;
+            img {
+              padding: 15px;
+              user-select: none;
+              border-radius: 60%;
+              background-color: #edf2f7;
+            }
+          }
+          h1 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #6366f1;
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+          }
+          p {
+            color: #718096;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.7;
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// media query for 767
+
+@media only screen and (max-width: 767px) {
+  .about {
+    .main {
+      .inner {
+        padding-top: 0;
+        .about_banner {
+          .bannerCont {
+            .right-title {
+              padding-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //   aboutSection1
+  .aboutSec1 {
+    font-family: "Poppins", sans-serif;
+    margin-top: 45px;
+    .main {
+      .about1 {
+        padding-top: 0;
+        text-align: center;
+        h1 {
+          margin: 10px 0 0 0;
+          font-size: 36px;
+        }
+        p {
+          margin: 10px 0 0 0;
+          font-size: 17px;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}
+
+// media query for the 575
+
+@media only screen and (max-width: 575px) {
+  .about {
+    .main {
+      .inner {
+        padding-top: 0;
+        .about_banner {
+          h3 {
+            font-size: 22px;
+          }
+          h1 {
+            font-size: 32px;
+          }
+          p {
+            font-size: 17px;
+          }
+        }
+      }
+
+      .aboutlower {
+        .almain {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  //   aboutSection1
+  .aboutSec1 {
+    .main {
+      .about1 {
+        h1 {
+          margin: 10px 0 0 0;
+          font-size: 36px;
+        }
+        p {
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+// media query for the 360 and 320
+
+@media only screen and (max-width: 360px) {
+  .about {
+    .main {
+      .inner {
+        padding-top: 0;
+        .about_banner {
+          margin-top: 90px;
+          .bnnaer_iamge {
+            margin-top: 17px;
+          }
+          h3 {
+            font-size: 17px;
+          }
+          h1 {
+            font-size: 28px;
+            margin: 10px 0 0 0;
+          }
+          p {
+            font-size: 16px;
+            margin: 10px 0 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  //   aboutSection1
+  .aboutSec1 {
+    .main {
+      .about1 {
+        h1 {
+          margin: 10px 0 0 0;
+          font-size: 23px;
+        }
+        p {
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+  }
 }

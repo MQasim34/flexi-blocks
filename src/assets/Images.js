@@ -14,8 +14,17 @@ import hslide5 from './homeImg/hslide5.png'
 import blog1 from './homeImg/blog1.png'
 import blog2 from './homeImg/blog2.png'
 import blog3 from './homeImg/blog3.png'
+import start from './start.svg'
+import branding from './aboutImages/Branding.svg'
+import copywriting from './aboutImages/copWriting.svg'
+import developing from './aboutImages/development.svg'
+import design from './aboutImages/design.svg'
+import ecommerce from './aboutImages/ecommerce.svg'
+import adrestisement from './aboutImages/adverstisment.svg'
+import webdesign from './aboutImages/webdesign.svg'
+import mobileapp from './aboutImages/mobileapp.svg'
 
-export{
+export {
     learning,
     international,
     oragniser,
@@ -28,8 +37,17 @@ export{
     hslide2,
     hslide3,
     hslide4,
-    hslide5,  
+    hslide5,
     blog1,
     blog2,
-    blog3
+    blog3,
+    start,
+    branding,
+    copywriting,
+    developing,
+    design,
+    ecommerce,
+    adrestisement,
+    webdesign,
+    mobileapp
 }
